@@ -34,7 +34,7 @@ public class UserController {
 	
 	@PostMapping("/saveOrUpdate")
 	public String saveOrUpdate(ModelMap model, @ModelAttribute("USER") Users user) {
-		
+		int abcd = 0; 
 		userServices.save(user);
 		
 		return "register-user";
